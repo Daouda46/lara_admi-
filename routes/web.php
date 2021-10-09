@@ -31,7 +31,7 @@ use App\Models\MultiImage;
 
 Route::get('/', function () {
     //les messages les plus recents
-    $brands = Brand::orderByDesc('id')->get();
+    $brands = Brand::all();
     $abouts = HomeAbout::all();
     $images = MultiImage::all();
     return view('content_home',compact('brands', 'abouts', 'images'));
