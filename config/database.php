@@ -81,7 +81,7 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
             'schema' => 'public',
-            'sslmode' => 'verify-full',
+            'sslmode' => 'verify-ca',
             
         ],
 
